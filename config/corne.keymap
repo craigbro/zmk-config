@@ -17,7 +17,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <13 14 15 16 36 37>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
             flavor = "tap-preferred";
         };
 
@@ -28,7 +28,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <19 20 21 22 39 40 41>;
+            hold-trigger-key-positions = <0 12 24 25 13 1 2 14 27 26 28 29 17 16 15 3 4 5>;
             flavor = "tap-preferred";
         };
 
@@ -39,7 +39,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <40 37 38 36 39 41>;
             flavor = "hold-preferred";
         };
 
@@ -49,8 +48,17 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <41 40 39 38 37 36>;
             tapping-term-ms = <200>;
+        };
+
+        thumbtap: thumbtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMBTAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -75,10 +83,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y             &kp U                    &kp I                   &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H             &kp J                    &kp K                   &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N             &kp M                    &kp COMMA               &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &thumblayer 2 TAB  &hml LSHFT SPACE    &hmr RCTRL ENTER  &thumblayer 1 BACKSPACE  &thumbmod RCTRL ESCAPE
+&kp TAB    &kp Q  &kp W  &kp E     &kp R              &kp T                         &kp Y                  &kp U                    &kp I                   &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F              &kp G                         &kp H                  &kp J                    &kp K                   &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V              &kp B                         &kp N                  &kp M                    &kp COMMA               &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &thumblayer 2 TAB  &thumbtap LEFT_SHIFT SPACE    &thumbtap RCTRL ENTER  &thumblayer 1 BACKSPACE  &thumbmod RCTRL ESCAPE
             >;
         };
 
