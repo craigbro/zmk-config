@@ -25,7 +25,8 @@ include:
   - board: nice_nano_v2
     cmake-args: -DKEYMAP=corne-miryoku
     shield: corne_left
+    artifact-name: corne_miryoku_left
   - board: nice_nano_v2
     cmake-args: -DKEYMAP=corne-miryoku
     shield: corne_right
-    
+    artifact-name: corne_miryoku_right
