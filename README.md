@@ -8,7 +8,8 @@ https://nickcoutsos.github.io/keymap-editor/ as a keymap editor, in
 Chrome, which let me use local files.  The 'config/corne.keymap' file
 contains the keymap.
 
-I have an experimental miryoku based kaymap defined as well.
+I have an experimental miryoku based kaymap defined as well, but it's
+build is commented out in the 'build.yaml' file.
 
 ## Bluetooth pairing
 
